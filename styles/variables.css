@@ -1,1 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+
+   /* Фон */
+   --all-bg-color: #ffffff;
+   /* --grid-image: url(../images/cover-image-dark.png); */
+
+    /* Декор */
+    --card-border-decor: 2px solid #000000;
+    --all-animation-decor: 2px solid #000000;
+
+    /* Шрифт */
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+    --card-header-text-weight: 700;
+    --card-content-text-weight: 400;
+  
+    --accent-font-family: 'PressStart2P-Regular', sans-serif;
+    --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+    --accent-text-weight: 400;
+
+    /* Цвета */
+    --all-content-text-color: #000000;
+
+    /* Кнопки и ссылки*/
+    --button-text-color: #000000;
+    --button-border-decor: 2px solid #000000;
+
+
+
+    --button-color-active: #FF0070;
+    --button-color-hover: rgba(255, 0, 112, 0.4);
+    --button-color-focus: #FF0070;
+    --link-color-hover:  #F1B2CE;
+    --link-color-focus:  #F1B2CE;
+  }
+   
+  

@@ -4,3 +4,86 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.page.theme_light {
+    /* Фон */
+    --all-bg-color: #ffffff;
+    /* --grid-image: url(../images/cover-image-dark.png); */
+     
+     /* Декор */
+    --card-border-decor: 2px solid #000000;
+    --all-animation-decor: 2px solid #000000;
+     
+    /* Шрифт */
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+    --card-header-text-weight: 700;
+    --card-content-text-weight: 400;
+        
+    --accent-font-family: 'PressStart2P-Regular', sans-serif;
+    --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+    --accent-text-weight: 400;
+        
+    /* Цвета */ 
+    --all-content-text-color: #000000;
+     
+    /* Кнопки и ссылки*/
+    --button-text-color: #000000;
+    --button-border-decor: 2px solid #000000;
+}
+
+.page.theme_dark {
+    /* Фон */
+    --all-bg-color: #000000;
+    /* --grid-image: url(../images/cover-image-dark.png); */
+     
+     /* Декор */
+    --card-border-decor: 2px solid #00cc14;
+    --all-animation-decor: 2px solid #00cc14;
+     
+    /* Шрифт */
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+    --card-header-text-weight: 785;
+    --card-content-text-weight: 465;
+        
+    --accent-font-family: 'PressStart2P-Regular', sans-serif;
+    --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+    --accent-text-weight: 400;
+        
+    /* Цвета */ 
+    --all-content-text-color: #00cc14;
+     
+    /* Кнопки и ссылки*/
+    --button-text-color: #00cc14;
+    --button-border-decor: 2px solid #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+   /* Фон */
+   --all-bg-color: #000000;
+   /* --grid-image: url(../images/cover-image-dark.png); */
+    
+    /* Декор */
+   --card-border-decor: 2px solid #00cc14;
+   --all-animation-decor: 2px solid #00cc14;
+    
+   /* Шрифт */
+   --main-font-family: 'Inter-Variable', sans-serif;
+   --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+   --card-header-text-weight: 785;
+   --card-content-text-weight: 465;
+       
+   --accent-font-family: 'PressStart2P-Regular', sans-serif;
+   --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
+   --accent-text-weight: 400;
+       
+   /* Цвета */ 
+   --all-content-text-color: #00cc14;
+    
+   /* Кнопки и ссылки*/
+   --button-text-color: #00cc14;
+   --button-border-decor: 2px solid #00cc14;
+    }
+}
