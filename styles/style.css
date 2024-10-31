@@ -16,7 +16,7 @@
 
 /* Декор */
 .decor-element {
-  border: var(--card-border-decor);
+  border: 2px solid var(--card-border-decor);
 }
 
 .text-accent {
@@ -29,27 +29,26 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
-  font-size: var(--main-content-text-size);
+  font-size: 18px;
   font-variation-settings: 'wght' var(--card-content-text-weight), 'wdth' 0, 'opsz' 0;
   background-color: var(--all-bg-color); 
   background-image: var(--grid-image);
   background-size: cover;
   background-attachment: fixed;
   padding: 100px 372px 103px 372px;
-  display: grid;
-  gap: 104px
-}
-
-.content {
-  inline-size: max(696px, 100%);
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 102px;
+  
 }
 
 .header {
- display: flex;
- flex-direction: column;
- align-items: center;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: min(696px, 100%);
+  background-color: var(--card--bg-color);
 }
 
 .header-logo {
@@ -69,7 +68,7 @@
 .header__theme-menu {
   margin-block-start: 23px;
   padding-block-end: 25px;
-  margin-inline-start: 12px;
+  margin-inline-start: 17px;
 }
 
 .theme-menu__list {
@@ -87,17 +86,150 @@
 }
 
 .theme-menu__button {
+  position: relative;
   border: none;
   background-color: transparent;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
-.main-content {
-  display: grid;
-  gap: 54px;
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  inset-inline-start: -15px;
+  animation: arrow 0.5s ease-in-out infinite alternate; 
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  inset-block-end:  -3px;
+  inset-inline-start: 0;
+  background-color: currentColor;
+  opacity: 0.6;
+  inline-size: 0;
+  block-size: 2px;
+}
+
+.theme-menu__button:focus-visible::after {
+  inline-size: 90px;
+  transition: inline-size 0.5s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  inline-size: min(696px, 100%);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card--bg-color);
+}
+
+.card-title {
+  padding: 3px 10px;
+  font-family: inherit;
+  font-weight: var(--card-header-text-weight);
+  font-size: inherit;
+}
+
+.card-img {
+  inline-size: 100%;
+  block-size: 702px;
+  object-fit: cover;
+  object-position: center;
+  border-block-start:  2px solid var(--card-border-decor);
+  border-block-end:  2px solid var(--card-border-decor);
+}
+
+.card-description {
+  padding: 25px;
+}
+
+.card-text {
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: var(--card-content-text-weight);
+  line-height: 21px;
+}
+
+.card-text:not(:last-child) {
+  padding-block-end: 27px;
+}
+
+.card-interaction-element {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+  padding-block-end: 25px;
+  padding-inline-end: 25px;
+}
+
+.card__like-button {
+  position: relative;
+  background-color: transparent;
+  border:  2px solid var(--card-border-decor);;
+  padding: 9px 17px;
+  inline-size: 130px;
+  block-size: 38px;
+  overflow: hidden;
+  padding: 9px 31px;
+  
+}
+
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--all-animation-decor);
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--all-animation-decor);
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button:hover::after {
+  content: "";
+  position: absolute;
+  inline-size: 130px;
+  block-size: 38px;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  background-color: var(--all-animation-decor);
+  animation: button 0.5s ease-in-out alternate; 
+  z-index: 0;
+  
+}
+
+.button_text {
+  position: relative;
+  font-family: var(--accent-font-family);
+  font-weight: var(--accent-text-weight);
+  font-size: 14px;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+  z-index: 1;
 }

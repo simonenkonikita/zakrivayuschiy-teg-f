@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
   </head>
-  <body class="page decor-element">
-    <header class="content header decor-element">
+  <body class="page">
+    <header class="header decor-element">
       <a class="header-logo text-accent" href="#">&lt/HTML&gt</a>
       <h1 class="header-title text-accent">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
@@ -52,20 +52,36 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <section class="content decor-element">
-        <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-        <img src="" alt="">
-        <p class="card-text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-        <p class="card-text">Место для ваших воспоминаний о начале обучения.</p>
-      </section>
-      <section class="content decor-element">
-        <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-        <img src="" alt="">
-        <p class="card-text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-        <p class="card-text">Место для ваших воспоминаний о начале обучения.</p>
-      </section>
-    </main>
+    <main class="content">
+        <article class="card decor-element">
+            <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <img class="card-img"
+              src="./images/image.png"
+              srcset="
+                ./images/image.png 1x,
+                ./images/image@2x.png 2x,
+                ./images/image@3x.png 3x
+              "
+              alt="Фургон"
+            />
+            <div class="card-description">
+              <p class="card-text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+              <p class="card-text">Место для ваших воспоминаний о начале обучения.</p>
+            </div>
+            <div class="card-interaction-element">
+              <button class="card__icon-button ">
+                <svg class="like-icon" viewBox="0 0 27 24">
+                  <use href="/svg/heart.svg#heart">
+                </svg>
+              </button>
+              
+                <button class="card__like-button">
+                  <span class="button_text">Like</span>
+                </button>
+              </span>
+            </div>
+        </article>
+         </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
