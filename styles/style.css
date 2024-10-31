@@ -16,10 +16,13 @@
 
 .page {
   min-inline-size: 320px;
+  min-block-size: 100dvb;
   font-family: var(--main-font-family);
   font-size: var(--main-content-text-size);
   font-variation-settings: 'wght' var(--card-content-text-weight), 'wdth' 0, 'opsz' 0;
-  background-color: var(--all-bg-color);
-  border-image: url();
+  background-color: var(--all-bg-color); 
+  background-image: var(--grid-image);
+  background-size: cover;
+  background-attachment: fixed;
 }
 

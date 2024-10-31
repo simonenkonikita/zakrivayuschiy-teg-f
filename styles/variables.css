@@ -4,7 +4,10 @@
 
    /* Фон */
    --all-bg-color: #ffffff;
-   /* --grid-image: url(../images/cover-image-dark.png); */
+   --grid-image:
+      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
 
     /* Декор */
     --card-border-decor: 2px solid #000000;
@@ -34,6 +37,7 @@
     --button-color-focus: #FF0070;
     --link-color-hover:  #F1B2CE;
     --link-color-focus:  #F1B2CE;
+
+    
   }
    
-  
