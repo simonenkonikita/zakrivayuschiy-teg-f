@@ -33,7 +33,7 @@
   font-size: 18px;
   font-variation-settings: 'wght' var(--card-content-text-weight);
   font-weight: var(--card-content-text-weight);
-  background-color: var(--all-bg-color); 
+  background-color: var(--all-bg-color);
   background-image: var(--grid-image);
   background-size: cover;
   background-attachment: fixed;
@@ -44,7 +44,7 @@
 }
 
 @media (width <= 375px) {
-  .page  {
+  .page {
     padding: 100px 0;
   }
 }
@@ -59,7 +59,7 @@
 }
 
 @media (width <= 375px) {
-  .header  {
+  .header {
     min-inline-size: 375px;
     margin-block-end: 100px;
   }
@@ -133,7 +133,7 @@
   content: "▶";
   position: absolute;
   inset-inline-start: -15px;
-  animation: arrow 0.5s ease-in-out infinite alternate; 
+  animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
 .theme-menu__button:hover {
@@ -174,7 +174,7 @@
 
 
 @media (width <= 375px) {
-  .content  {
+  .content {
     max-inline-size: 375px;
   }
 }
@@ -187,7 +187,7 @@
 
 .card-title {
   padding: 3px 10px;
-  font-family: inherit; 
+  font-family: inherit;
   color: var(--all-content-text-color);
   font-variation-settings: 'wght' var(--card-header-text-weight);
   font-size: inherit;
@@ -369,7 +369,7 @@ filter: sepia(1) contrast(2) brightness(200%);
 }
 
 @media (width <= 375px) {
-  .footer  {
+  .footer {
     max-inline-size: 375px;
   }
 }
@@ -470,7 +470,7 @@ filter: sepia(1) contrast(2) brightness(200%);
   background-color: var(--all-bg-color);
 }
 
-.dialog-windows[open]{
+.dialog-windows[open] {
   display: flex;
 }
 
