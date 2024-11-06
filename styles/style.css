@@ -11,7 +11,6 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
 /* Декор */
@@ -172,7 +171,6 @@
   max-inline-size: 696px;
 }
 
-
 @media (width <= 375px) {
   .content {
     max-inline-size: 375px;
@@ -234,7 +232,6 @@
   border-block-start: 2px solid var(--border-decor);
   border-block-end: 2px solid var(--border-decor);
 }
-
 
 @media (width <= 375px) {
   .card-img {
