@@ -8,15 +8,16 @@
       repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
       repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
-    --card--bg-color: #ffffff;
 
     /* Декор */
-    --card-border-decor: #000000;
+    --border-decor: #000000;
     --all-animation-decor: #000000;
+    --sparks-animation-decor: #FF0000;
+    --main-body-animation-decor: #FF0000;
+    --floppy-color: #ffffff;
 
     /* Шрифт */
     --main-font-family: 'Inter-Variable', sans-serif;
-   /*  --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem); */
     --card-header-text-weight: 700;
     --card-content-text-weight: 400;
   
