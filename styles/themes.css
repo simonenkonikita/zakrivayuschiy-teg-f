@@ -12,26 +12,21 @@
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
-     
-     /* Декор */
+    /* Декор */
     --border-decor: 2px solid #000000;
     --all-animation-decor: 2px solid #000000;
     --sparks-animation-decor: #FF0000;
     --main-body-animation-decor: #FF0000;
     --floppy-color: #ffffff;
-     
     /* Шрифт */
     --main-font-family: 'Inter-Variable', sans-serif;
     --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
     --card-header-text-weight: 785;
     --card-content-text-weight: 465;
-        
     --accent-font-family: 'PressStart2P-Regular', sans-serif;
     --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
-
-    /* Цвета */ 
+    /* Цвета */
     --all-content-text-color: #000000;
-     
     /* Кнопки и ссылки*/
     --button-text-color: #000000;
     --button-border-decor: 2px solid #000000;
@@ -44,26 +39,21 @@
     repeating-linear-gradient(90deg, #000000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#000000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c 0%, #004306 100%);
-     
-     /* Декор */
+    /* Декор */
     --border-decor: #00cc14;
     --all-animation-decor: 2px solid rgb(0, 204, 20);
     --sparks-animation-decor: #FF0000;
     --main-body-animation-decor: #FF0000;
     --floppy-color: #00cc14;
-     
     /* Шрифт */
     --main-font-family: 'Inter-Variable', sans-serif;
     --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
     --card-header-text-weight: 785;
     --card-content-text-weight: 465;
-        
     --accent-font-family: 'PressStart2P-Regular', sans-serif;
     --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
-
     /* Цвета */ 
     --all-content-text-color: #00cc14;
-     
     /* Кнопки и ссылки*/
     --button-text-color: #00cc14;
     --button-border-decor: 2px solid #00cc14;
@@ -77,23 +67,19 @@
     repeating-linear-gradient(90deg, #000000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#000000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c 0%, #004306 100%);
-     
-     /* Декор */
+    /* Декор */
     --border-decor: #00cc14;
     --all-animation-decor: #00cc14;
     --sparks-animation-decor: #FF0000;
     --main-body-animation-decor: #FF0000;
     --floppy-color: #00cc14;
-     
     /* Шрифт */
     --main-font-family: 'Inter-Variable', sans-serif;
     --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
     --card-header-text-weight: 785;
-    --card-content-text-weight: 465;
-        
+    --card-content-text-weight: 465; 
     --accent-font-family: 'PressStart2P-Regular', sans-serif;
     --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
-    
     /* Цвета */ 
     --all-content-text-color: #00cc14;
     /* Кнопки и ссылки*/
