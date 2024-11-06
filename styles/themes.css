@@ -51,6 +51,7 @@
     --card-header-text-weight: 785;
     --card-content-text-weight: 465;
     --accent-font-family: 'PressStart2P-Regular', sans-serif;
+    
     --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
     /* Цвета */ 
     --all-content-text-color: #00cc14;
@@ -78,6 +79,7 @@
     --main-content-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
     --card-header-text-weight: 785;
     --card-content-text-weight: 465;
+    
     --accent-font-family: 'PressStart2P-Regular', sans-serif;
     --accent-text-size: clamp(1rem, 0.384rem + 2.629vw, 2.75rem);
     /* Цвета */ 
