@@ -68,6 +68,7 @@
   font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
   text-decoration: none;
   margin-block-start: 136px;
+
 }
 
 @media (width <= 375px) {
@@ -217,12 +218,16 @@
   font-family: var(--accent-font-family);
   font-size: 14px;
   color: var(--all-content-text-color);
+  text-shadow: 1px 1px  var(--all-bg-color), -1px -1px  var(--all-bg-color);
+  z-index: 1;
 }
 
 @supports (-webkit-text-stroke: 1px var(--all-bg-color)) {
   .card-label {
       -webkit-text-stroke: 1px var(--all-bg-color);
-      z-index: 1;
+  }
+  .card-label {
+    text-shadow: none;
   }
 }
 
