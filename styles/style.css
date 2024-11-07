@@ -79,6 +79,16 @@
   }
 }
 
+.header-logo:focus {
+  outline: none;
+}
+
+.header-logo:focus-visible {
+  outline: 5px solid var(--all-animation-decor);
+  transition: outline 0.3s ease;
+  outline-offset: 5px;
+}
+
 .header-title {
   font-size: 23px;
   color: var(--all-content-text-color);
@@ -94,6 +104,8 @@
     margin-block-start: 21px;
   }
 }
+
+
 
 .header__theme-menu {
   margin-block-start: 23px;
@@ -209,6 +221,7 @@
   opacity: 0.5;
   font-family: var(--accent-font-family);
   font-size: 14px;
+  color: var(--all-content-text-color);
 }
 
 @supports (-webkit-text-stroke: 1px var(--all-bg-color)) {
