@@ -225,9 +225,7 @@
 @supports (-webkit-text-stroke: 1px var(--all-bg-color)) {
   .card-label {
       -webkit-text-stroke: 1px var(--all-bg-color);
-  }
-  .card-label {
-    text-shadow: none;
+      text-shadow: none;
   }
 }
 
