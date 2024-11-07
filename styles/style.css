@@ -52,29 +52,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-inline-size: 696px;
+  inline-size: clamp(23.438rem, 16.373rem + 30.14vw, 43.5rem);
   background-color: var(--all-bg-color);
   margin-block-end: 100px;
 }
 
 @media (width <= 375px) {
   .header {
-    min-inline-size: 375px;
-    margin-block-end: 100px;
+    max-inline-size: 375px;
+    max-block-size: 326px;
   }
 }
 
 .header-logo {
-  font-size: 65px;
-  line-height: 65px;
+  font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
   text-decoration: none;
   margin-block-start: 136px;
 }
 
 @media (width <= 375px) {
   .header-logo {
-    font-size: 49px;
-    line-height: 49px;
     margin-block-start: 120px;
   }
 }
@@ -86,7 +83,6 @@
 .header-logo:focus-visible {
   outline: 5px solid var(--all-animation-decor);
   transition: outline 0.3s ease;
-  outline-offset: 5px;
 }
 
 .header-title {
@@ -104,8 +100,6 @@
     margin-block-start: 21px;
   }
 }
-
-
 
 .header__theme-menu {
   margin-block-start: 23px;
@@ -180,7 +174,7 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  max-inline-size: 696px;
+
 }
 
 @media (width <= 375px) {
@@ -193,6 +187,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--all-bg-color);
+  inline-size: clamp(23.438rem, 16.373rem + 30.14vw, 43.5rem);
 }
 
 .card-title {
@@ -239,6 +234,7 @@
 }
 
 .card-img {
+  inline-size: 100%;
   block-size: 700px;
   object-fit: cover;
   object-position: center;
@@ -374,8 +370,9 @@ filter: sepia(1) contrast(2) brightness(200%);
 .footer {
   display: flex;
   justify-content: center;
-  inline-size: max(696px, 100%);
   padding-block-start: 52px;
+  inline-size: clamp(23.438rem, 16.373rem + 30.14vw, 43.5rem);
+  
 }
 
 @media (width <= 375px) {
