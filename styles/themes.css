@@ -43,7 +43,6 @@
   }
 }
 
-
 :root.theme-dark {
   --all-bg-color: #000000;
   --grid-image: repeating-linear-gradient(
