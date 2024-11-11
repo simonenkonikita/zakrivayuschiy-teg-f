@@ -13,7 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-
 /* * { outline: 1px solid red; }  */
 
 /* Декор */
@@ -43,7 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 1px solid rgb(0, 224, 86); 
+  outline: 1px solid rgb(0, 224, 86);
 }
 
 @media (width <= 375px) {
@@ -318,7 +317,6 @@
   padding: 0;
   border: 2px solid transparent;
   transition: border 0.3s linear;
-  
 }
 
 .card__icon-button:hover {
