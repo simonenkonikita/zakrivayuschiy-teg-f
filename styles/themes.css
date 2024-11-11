@@ -23,26 +23,6 @@
   --button-text-color: #ffffff;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --all-bg-color: #ffffff;
-    --grid-image: repeating-linear-gradient(
-        90deg,
-        #d3d3d3 0 2px,
-        transparent 2px 4px
-      ),
-      repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
-      linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
-    --border-decor: #000000;
-    --all-animation-decor: #000000;
-    --floppy-color: #ffffff;
-    --card-header-text-weight: 700;
-    --card-content-text-weight: 400;
-    --all-content-text-color: #000000;
-    --button-text-color: #ffffff;
-  }
-}
-
 :root.theme-dark {
   --all-bg-color: #000000;
   --grid-image: repeating-linear-gradient(
