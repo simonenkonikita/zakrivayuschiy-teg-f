@@ -13,6 +13,9 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+
+/* * { outline: 1px solid red; }  */
+
 /* Декор */
 .decor-element {
   border: 2px solid var(--border-decor);
@@ -20,9 +23,9 @@
 
 .text-accent {
   font-family: var(--accent-font-family);
-  font-size: var( --accent-text-size);
+  font-size: var(--accent-text-size);
   font-weight: var(--accent-text-weight);
-  color: var(--all-content-text-color);;
+  color: var(--all-content-text-color);
 }
 
 .page {
@@ -30,7 +33,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
   font-size: 18px;
-  font-variation-settings: 'wght' var(--card-content-text-weight);
+  font-variation-settings: "wght" var(--card-content-text-weight);
   font-weight: var(--card-content-text-weight);
   background-color: var(--all-bg-color);
   background-image: var(--grid-image);
@@ -40,6 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  outline: 1px solid rgb(0, 224, 86); 
 }
 
 @media (width <= 375px) {
@@ -60,7 +64,7 @@
 @media (width <= 375px) {
   .header {
     max-inline-size: 375px;
-    max-block-size: 326px;
+    min-block-size: 326px;
   }
 }
 
@@ -68,7 +72,6 @@
   font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
   text-decoration: none;
   margin-block-start: 136px;
-
 }
 
 @media (width <= 375px) {
@@ -118,7 +121,7 @@
 .theme-menu__item {
   position: relative;
   font-family: var(--accent-font-family);
-  font-size: 14px ;
+  font-size: 14px;
   font-weight: var(--accent-text-weight);
 }
 
@@ -127,12 +130,13 @@
   border: none;
   background-color: transparent;
   text-transform: uppercase;
+  transition: opacity 0.3s ease;
+  transition: inline-size 0.3s ease;
 }
 
 .theme-menu__button:disabled {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
   pointer-events: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
@@ -143,31 +147,34 @@
 }
 
 .theme-menu__button:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus {
   outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button::after {
   content: "";
   position: absolute;
-  inset-block-end:  -3px;
+  inset-block-end: -3px;
   inset-inline-start: 0;
   background-color: currentColor;
   opacity: 0.6;
   inline-size: 0;
   block-size: 2px;
+  transition: inline-size 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
-  inline-size: 90px;
-  transition: inline-size 0.5s ease;
+  inline-size: 100%;
+  opacity: 0.6;
 }
 
 .content {
@@ -175,7 +182,6 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-
 }
 
 @media (width <= 375px) {
@@ -192,10 +198,10 @@
 }
 
 .card-title {
-  padding: 3px 10px;
+  padding: 5px 8px;
   font-family: inherit;
   color: var(--all-content-text-color);
-  font-variation-settings: 'wght' var(--card-header-text-weight);
+  font-variation-settings: "wght" var(--card-header-text-weight);
   font-size: inherit;
 }
 
@@ -211,28 +217,28 @@
 
 .card-label {
   position: absolute;
-  inset-inline-end: 25px ;
-  inset-block-start: 27px ;
+  inset-inline-end: 25px;
+  inset-block-start: 27px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   font-family: var(--accent-font-family);
   font-size: 14px;
   color: var(--all-content-text-color);
-  text-shadow: 1px 1px  var(--all-bg-color), -1px -1px  var(--all-bg-color);
+  text-shadow: 1px 1px var(--all-bg-color), -1px -1px var(--all-bg-color);
   z-index: 1;
 }
 
 @supports (-webkit-text-stroke: 1px var(--all-bg-color)) {
   .card-label {
-      -webkit-text-stroke: 1px var(--all-bg-color);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--all-bg-color);
+    text-shadow: none;
   }
 }
 
 @media (width <= 375px) {
   .card-label {
-    inset-inline-end: 13px ;
-    inset-block-start: 27px ;
+    inset-inline-end: 13px;
+    inset-block-start: 27px;
   }
 }
 
@@ -248,7 +254,7 @@
 @media (width <= 375px) {
   .card-img {
     inline-size: 100%;
-    block-size: 371px;
+    block-size: 375px;
   }
 }
 
@@ -257,7 +263,7 @@
 }
 
 .contrast {
-filter: contrast(200%);
+  filter: contrast(200%);
 }
 
 .blur {
@@ -277,24 +283,19 @@ filter: contrast(200%);
 }
 
 .set-filter {
-filter: sepia(1) contrast(2) brightness(200%);
+  filter: sepia(1) contrast(2) brightness(200%);
 }
 
 .card-description {
-  padding: 25px;
+  padding: 21px 24px 25px 23px;
 }
 
 .card-text {
   font-family: var(--main-font-family);
   font-size: 18px;
-  color: var( --all-content-text-color);
+  color: var(--all-content-text-color);
   font-weight: var(--card-content-text-weight);
-}
-
-@media (width <= 375px) {
-  .card-text {
-  inline-size: min(321px, 100%);
-  }
+  inline-size: clamp(20.063rem, 12.954rem + 30.33vw, 40.25rem);
 }
 
 .card-text:not(:last-child) {
@@ -305,13 +306,23 @@ filter: sepia(1) contrast(2) brightness(200%);
   display: flex;
   justify-content: end;
   padding-block-end: 25px;
-  padding-inline-end: 25px;
+  padding-inline-end: 24px;
+  gap: 5px;
 }
 
 .card__icon-button {
- background-color: transparent;
- border: none;
- block-size: 39px;
+  display: flex;
+  background-color: transparent;
+  inline-size: 39px;
+  block-size: 39px;
+  padding: 0;
+  border: 2px solid transparent;
+  transition: border 0.3s linear;
+  
+}
+
+.card__icon-button:hover {
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -319,63 +330,17 @@ filter: sepia(1) contrast(2) brightness(200%);
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--all-animation-decor);
-  transition: outline 0.3s ease;
-  outline-offset: -2px;
+  border: 2px solid var(--border-decor);
 }
 
 .sparks {
   opacity: 0;
 }
 
-.card__like-button {
-  position: relative;
-  background-color: var(--all-bg-color);
-  border: 2px solid var(--border-decor);
-  padding: 9px 17px;
-  inline-size: 130px;
-  block-size: 39px;
-  overflow: hidden;
-}
-
-.card__icon-button:hover {
-  cursor: pointer;
-}
-
-.card__like-button:focus {
-  outline: none;
-}
-
-.card__like-button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 0 var(--all-animation-decor);
-  transition: box-shadow 0.3s ease;
-}
-
-.card__like-button::after {
-  content: "";
-  position: absolute;
-  inline-size: 130px;
-  block-size: 38px;
-  inset-block-start: 0;
-  inset-inline-start: 0;
-  translate: -100% 0;
-  transition: translate 0.5s ease-in-out;
-  background-color: var(--all-animation-decor);
-  z-index: 0;
-}
-
-.card__like-button:hover::after {
-  translate: 0 0;
-  transition: translate 0.5s ease-in-out;
-}
-
 .footer {
   display: flex;
   justify-content: center;
-  padding-block-start: 52px;
   inline-size: clamp(23.438rem, 16.373rem + 30.14vw, 43.5rem);
-  
 }
 
 @media (width <= 375px) {
@@ -384,65 +349,67 @@ filter: sepia(1) contrast(2) brightness(200%);
   }
 }
 
+.card__like-button {
+  padding: 9px 17px;
+  inline-size: 130px;
+  block-size: 39px;
+}
+
 .save-button {
-  position: relative;
   display: flex;
   gap: 8px;
   align-items: center;
   justify-content: center;
-  inline-size: 335px;
-  block-size: 51px;
-  padding: 15px 19px;
-  background-color: var(--all-bg-color);
-  border: 2px solid var(--border-decor);
-  overflow: hidden;
+  inline-size: 337px;
+  block-size: 54px;
+  padding: 18.5px 19px;
 }
 
 @media (width <= 375px) {
   .save-button {
     flex-direction: column;
-    inline-size: 306px;
-    block-size: 80px;
+    inline-size: 308px;
+    block-size: 82px;
+    padding: 12px 19.5px;
   }
 }
 
-.save-button:focus {
-  outline: none;
-}
-
-.save-button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 0 var(--all-animation-decor);
-  transition: box-shadow 0.3s ease;
-}
-
-.save-button:hover {
+.button-decor:hover {
   cursor: pointer;
 }
 
-.save-button::after {
+.button-decor {
+  position: relative;
+  background-color: var(--all-bg-color);
+  border: 2px solid var(--border-decor);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-decor:focus {
+  outline: none;
+}
+
+.button-decor:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--all-animation-decor);
+}
+
+.button-decor::after {
   content: "";
   position: absolute;
-  inline-size: 335px;
-  block-size: 51px;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--all-animation-decor);
   inset-block-start: 0;
   inset-inline-start: 0;
   translate: -100% 0;
   transition: translate 0.5s ease-in-out;
-  background-color: var(--all-animation-decor);
   z-index: 0;
 }
 
-@media (width <= 375px) {
-  .save-button::after {
-    inline-size: 306px;
-    block-size: 80px;
-  }
-}
-
-.save-button:hover::after {
+.button-decor:hover::after {
   translate: 0 0;
-  transition: translate 0.5s ease-in-out;
 }
 
 .button_text {
@@ -488,7 +455,7 @@ filter: sepia(1) contrast(2) brightness(200%);
   inline-size: 39px;
   block-size: 39px;
   align-self: center;
-  object-fit:cover
+  object-fit: cover;
 }
 
 .dialog-windows::backdrop {
@@ -521,4 +488,3 @@ filter: sepia(1) contrast(2) brightness(200%);
   inline-size: 293px;
   block-size: 38px;
 }
-
