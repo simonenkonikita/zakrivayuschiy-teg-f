@@ -409,7 +409,7 @@
   translate: 0 0;
 }
 
-.button_text {
+.button__text {
   position: relative;
   font-family: var(--accent-font-family);
   font-weight: var(--accent-text-weight);
