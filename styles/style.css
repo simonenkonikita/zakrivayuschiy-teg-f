@@ -13,8 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-/* * { outline: 1px solid red; }  */
-
 /* Декор */
 .decor-element {
   border: 2px solid var(--border-decor);
@@ -28,7 +26,7 @@
 }
 
 .page {
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
   font-size: 18px;
@@ -38,7 +36,7 @@
   background-image: var(--grid-image);
   background-size: cover;
   background-attachment: fixed;
-  padding: 100px 372px 103px 372px;
+  padding: 100px 0 103px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +61,6 @@
 @media (width <= 375px) {
   .header {
     max-inline-size: 375px;
-    min-block-size: 326px;
   }
 }
 
@@ -442,10 +439,17 @@
 
 .dialog-windows {
   min-inline-size: 357px;
-  min-block-size: 193px;
+  padding: 30px 30px;
   align-items: center;
   justify-content: center;
   background-color: var(--all-bg-color);
+}
+
+@media (width <= 375px) {
+  .dialog-windows  {
+    min-inline-size: 345px;
+    padding: 30px 42px;
+  }
 }
 
 .dialog-windows[open] {
@@ -485,7 +489,19 @@
   inline-size: 234px;
 }
 
+@media (width <= 375px) {
+  .dialog-description {
+    inline-size: 198px;
+  }
+}
+
 .dialog-windows .save-button {
   inline-size: 293px;
   block-size: 38px;
+}
+
+@media (width <= 375px) {
+  .dialog-windows .save-button  {
+    inline-size: 257px;
+  }
 }
