@@ -446,7 +446,7 @@
 }
 
 @media (width <= 375px) {
-  .dialog-windows  {
+  .dialog-windows {
     min-inline-size: 345px;
     padding: 30px 42px;
   }
@@ -501,7 +501,7 @@
 }
 
 @media (width <= 375px) {
-  .dialog-windows .save-button  {
+  .dialog-windows .save-button {
     inline-size: 257px;
   }
 }
