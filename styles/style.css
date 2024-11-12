@@ -459,8 +459,8 @@
 .dialog-windows .save-item {
   inline-size: 39px;
   block-size: 39px;
-  align-self: center;
   object-fit: cover;
+  align-self: center;
 }
 
 .dialog-windows::backdrop {
