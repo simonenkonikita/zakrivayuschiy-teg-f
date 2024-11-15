@@ -30,7 +30,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
   font-size: 18px;
-  font-variation-settings: "wght" var(--card-content-text-weight);
+  font-variation-settings: "wght" var(--card-content-text-weight, 400);
   font-weight: var(--card-content-text-weight);
   background-color: var(--all-bg-color);
   background-image: var(--grid-image);
